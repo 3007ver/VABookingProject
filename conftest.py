@@ -41,10 +41,6 @@ def generate_random_booking_data(booking_dates):
 
     return data
 
-@pytest.fixture()
-def full_booking_data(booking_dates, generate_random_booking_data):
-    generate_random_booking_data['booking_dates'] = booking_dates
-    return generate_random_booking_data
 
 
 
