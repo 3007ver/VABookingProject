@@ -24,7 +24,9 @@ jobs:
 
       - name: Create .env file
         run: |
-          echo "BASE_URL=https://restful-booker.herokuapp.com" >> .env
+          echo "ENVIRONMENT=PROD" >> .env
+          echo "PROD_BASE_URL=https://restful-booker.herokuapp.com" >> .env
+          echo "TEST_BASE_URL=https://reqres.in/" >> .env
           echo "ADMIN_LOGIN=admin" >> .env
           echo "ADMIN_PASSWORD=password123" >> .env
 
